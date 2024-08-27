@@ -4,7 +4,7 @@ use pyo3::{create_exception, exceptions, prelude::*, wrap_pyfunction};
 
 mod broadcasting;
 mod conversions;
-mod core;
+pub mod core;
 
 create_exception!(pyxirr, InvalidPaymentsError, exceptions::PyException);
 create_exception!(pyxirr, BroadcastingError, exceptions::PyException);

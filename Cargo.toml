@@ -40,6 +40,13 @@ ndarray = "0.15"
 assert_approx_eq = "1.1"
 rstest = { version = "0.18.2", default-features = false }
 pyo3 = { version = "0.20", features = ["auto-initialize"]}
+paste = "1.0.15"
+rand = "0.8.5"
+criterion = "0.5.1"
 
 [features]
 nonumpy = []
+
+[[bench]]
+name = "bench"
+harness = false
